@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: k8s-cicd-app
 spec:
-  replicas: 2
+  replicas: 4
   revisionHistoryLimit: 5
   minReadySeconds: 5
   strategy:
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: k8s-cicd-app
-        image: k8s-cicd-app:v1
+        image: k8s-cicd-app:v2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
