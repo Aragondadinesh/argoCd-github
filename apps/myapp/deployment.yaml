@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: k8s-cicd-app
-        image: k8s-cicd-app:v2
+        image: k8s-cicd-app:v3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
